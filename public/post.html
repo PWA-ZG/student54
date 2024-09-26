@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Explore</a></li>
+            <li><a href="/post.html">Post</a></li>
+            <li><button id="btn-notification">
+                <img src="icons/notification.png">
+            </button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <article id="video-article" hidden>
+            <video id="player" width="100%" autoplay></video>
+            <div class="button-container">
+                <button id="btn-take">Take</button>
+            </div>
+        </article>
+        <article id="canvas-article" hidden>
+            <canvas id="taken-photo"></canvas>
+            <div class="button-container">
+                <button id="btn-post">Post</button>
+                <button id="btn-discard">Discard</button>
+            </div>
+        </article>
+        <article id="upload-article" hidden>
+            <input type="file" id="file" name="filephoto" accept="image/png" size="">
+            <div class="button-container">
+                <button id="btn-upload">Upload</button>
+            </div>
+        </article>
+    </div>
+    <script src="/js/post.min.js"></script>
+
+</body>
+</html>

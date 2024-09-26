@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background: #888888;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 100px auto;
+    max-width: 600px;
+}
+
+
+article {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article>h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+article>h2 {
+    font-size: 14px;
+    color: #888;
+}
+
+article>img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+article>input {
+    max-width: 600px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav img {
+    width: 20px;
+    height: auto;
+}
+
+button, input[type=file]::file-selector-button {
+    padding: 8px 20px;
+    margin: 10px;
+    font-size: 1em;
+    background-color: #4285f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type=file]::file-selector-button:hover {
+    background-color: #3272bf;
+}
+
+button:active, input[type=file]::file-selector-button:active {
+    transform: scale(0.95);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+#btn-notification {
+    margin: 0;
+    padding: 8px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        justify-content: start;
+        bottom: initial;
+        top: 0;
+        border-bottom: 1px solid #ddd;
+        border-top: none;
+    }
+
+    nav ul {
+        width: auto;
+    }
+
+    .container {
+        margin-bottom: 0px;
+        margin-top: 70px;
+        max-width: 1200px;
+    }
+}
